@@ -1,44 +1,132 @@
-<header>
-    <h1>FitWay - Спортивный магазин</h1>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitWay - Спортивный Магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #28a745;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .products, .promo, .contact {
+            margin-bottom: 40px;
+        }
+        .products h2, .promo h2, .contact h2 {
+            margin-bottom: 20px;
+        }
+        .product-card {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FitWay - Всё для активного образа жизни</h1>
+    </header>
 
-<nav>
-    <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="#">Акции</a></li>
-        <li><a href="#">Контакты</a></li>
-    </ul>
-</nav>
+    <nav>
+        <a href="#products">Товары</a>
+        <a href="#promo">Акции</a>
+        <a href="#contact">Контакты</a>
+    </nav>
 
-<div class="container">
-    <!-- Продукты -->
-    <div class="product">
-        <img src="https://via.placeholder.com/300" alt="Тренажер">
-        <h2>Тренажер для дома</h2>
-        <p>Идеально подходит для тренировок в домашних условиях. Удобный и компактный.</p>
-        <div class="price">5000 руб.</div>
-        <button>Купить</button>
+    <div class="hero">
+        <h2>Будь в форме с FitWay!</h2>
+        <p>Лучшая экипировка и товары для спорта.</p>
     </div>
 
-    <div class="product">
-        <img src="https://via.placeholder.com/300" alt="Бутылка">
-        <h2>Бутылка для воды</h2>
-        <p>Удобная бутылка для тренировки. Объем 1 литр.</p>
-        <div class="price">600 руб.</div>
-        <button>Купить</button>
-    </div>
+    <section id="products" class="products">
+        <h2>Наши товары</h2>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Кроссовки">
+            <h3>Кроссовки</h3>
+            <p>Удобные и стильные кроссовки для любых тренировок.</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Спортивная форма">
+            <h3>Спортивная форма</h3>
+            <p>Одежда для тренировок и активного отдыха.</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Фитнес-аксессуары">
+            <h3>Фитнес-аксессуары</h3>
+            <p>Все, что нужно для занятий спортом дома и в зале.</p>
+        </div>
+    </section>
 
-    <div class="product">
-        <img src="https://via.placeholder.com/300" alt="Футболка">
-        <h2>Футболка для спорта</h2>
-        <p>Легкая и дышащая ткань для максимального комфорта во время тренировок.</p>
-        <div class="price">1200 руб.</div>
-        <button>Купить</button>
-    </div>
-</div>
+    <section id="promo" class="promo">
+        <h2>Наши акции</h2>
+        <p>Скидка 20% на первую покупку!</p>
+        <p>При покупке от 5000 рублей — доставка бесплатно!</p>
+    </section>
 
-<footer>
-    <p>&copy; 2025 FitWay. Все права защищены.</p>
-</footer>
+    <section id="contact" class="contact">
+        <h2>Контакты</h2>
+        <p>Адрес: г. Москва, ул. Спортивная, д. 10</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+        <p>Email: info@fitway.ru</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FitWay. Все права защищены.</p>
+    </footer>
+</body>
+</html>
